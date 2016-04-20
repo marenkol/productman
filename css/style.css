@@ -2,9 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,900);
 
 body{
-	background: #e2e2da;
+	background: #eaeaea;
 	font:  14px/1.33 'Roboto', sans-serif;
 	color: #303030;
+
 }
 
 /* Typography */
@@ -64,17 +65,18 @@ textarea {
 }
 
 .ba-logo{
-	font: 900 46px 'Roboto';
+	font: 900 33px 'Roboto', sans-serif;
 	text-decoration: none;
 	color: #303030;
+	padding: 0 0 0 12px;
 }
 .ba-logo:hover{
-	transform: scale(1.05);
+	text-shadow: 1px 1px 2px #303030;
 	transition: all 0.1s ease-in;
 }
 .ba-menu{
 	list-style: none;
-	padding: 60px 0 0 0 ;
+	padding: 40px 0 0 0 ;
 	font: 400 18px/1.5 'Roboto', sans-serif;
 }
 .ba-menu li{
@@ -92,18 +94,18 @@ textarea {
 }
 
 
+
 .ba-bw{
 	max-width: 1198px;
-	padding-bottom: 185px;
+	margin: 48px 0 255px 0;
 	padding-right: 110px;
 }
-
 .ba-bw__text{
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 1.5;
     text-align: right;
-	max-width: 615px;
+	max-width: 600px;
 }
 .ba-bw__text h1{
 	font: 900 150px/1 'Raleway', sans-serif;
@@ -117,16 +119,11 @@ textarea {
 	transition: all 0.1s ease-in;
 }
 .ba-bw__text a:hover{
-	display: inline-block;
 	text-decoration: underline;
-	transform: scale(1.1);
 }
-.ba-bw{
-	background: radial-gradient( closest-side at 850px 150px  , #fff, #e2e2da);
+.ba-bw__img{
+	background: radial-gradient( closest-side at 150px 150px  , #fff, transparent);
 }
-
-
-
 .ba-featured{
 	background: #FFF;
 	padding: 0 60px 70px;
@@ -159,7 +156,6 @@ textarea {
 	border-radius: 10px;
 	width: 100%;
 }
-
 .ba-featured__img_mask{
 	position: absolute;
 	left: 0;
@@ -290,9 +286,169 @@ textarea {
 	font: 400 18px/1.33 'Raleway', sans-serif;
 	color:  #979797;
 }
-.ba-footer span{
+.ba-footer a{
 	color: #303030;
+	text-decoration: none;
+}
+.ba-footer a:hover {
+	color:  #e10011;
 }
 
+@media (max-width: 1200px) {
+	.ba-bw {
+		text-align: center;
+		margin: 30px 0 150px 0;
+			padding: 0;
+	}
+	.ba-bw__img {
+		float: none;
+		display: inline-block;
+	}
+	.ba-bw__text {
+		float: none;
+		display: inline-block;
+		text-align: center;
+		max-width: 90%;
+		margin-bottom: 40px;
+	}
+	.ba-bw__text h1{
+		float: none;
+		text-overflow: clip;
+		font-size: 70px;
+	}
+}
+@media (max-width: 960px) {
+	.ba-intro {
+		text-align: center;
+	}
+	.ba-header {
+		display: inline-block;
+	}
+	.ba-bw {
+		text-align: center;
 
+		margin-bottom: 100px;
+	}
+	.ba-logo {
+		font-size: 25px;
+	}
+	.ba-menu {
+		display: none;
+	}
+	.ba-bw__text {
+		text-overflow: clip;
+	}
+
+}
+@media (max-width: 768px) {
+	.ba-bw {
+		margin-bottom:30px;
+	}
+	.ba-logo {
+		font-size: 20px;
+	}
+	.ba-bw__text h1{
+		font-size: 50px;
+	}
+	.ba-featured__text h3 {
+		font-size: 30px;
+	}
+	.ba-featured {
+		margin: 0;
+	}
+	.ba-productman-news {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.ba-productman-news h3{
+		font-size: 30px;
+	}
+	.ba-productman-news__textfield{
+		min-height: 55px;
+		width: 90%;
+		border-radius: 25px;
+		display: block;
+		margin: 0 auto;
+	}
+	.ba-productman-news__button{
+		min-height: 55px;
+		max-width: 200px;
+		padding: 0 20px;
+		border-radius: 25px;
+		display: block;
+		margin: 15px auto;
+	}
+	.ba-featured__img_mask {
+		display: none;
+	}
+	.ba-featured__img:active img{
+		border: 2px solid #e10011;
+		transition: all .1s ease-in-out;
+	}
+}
+@media (max-width: 480px) {
+	.ba-logo {
+		font-size: 10px;
+	}
+	.ba-bw {
+		margin-bottom:10px;
+	}
+	.ba-bw__text {
+		margin: -30px 0 10px 0;
+		padding: 0;
+	}
+	.ba-bw__text h1{
+		font-size: 20px;
+	}
+	.ba-bw__text p{
+		font-size: 16px;
+		text-align: justify;
+	}
+	.ba-bw__text a {
+		font-size: 16px;
+	}
+	.ba-bw__img img {
+		display: none;
+	}
+	.ba-bw__img {
+		width: 150px;
+		height: 202px;
+		background: url("../img/image1-mobile.png") 50% no-repeat;
+	}
+	.ba-featured{
+		padding: 0 20px 35px;
+	}
+	.ba-featured__text p{
+		margin-bottom: 35px;
+	}
+	.ba-featured__text h3 {
+		font-size: 20px;
+	}
+
+	.ba-productman-news h3{
+		font-size: 20px;
+	}
+	.ba-productman-news__subscribe {
+		margin: 0;
+		padding: 20px 0;
+	}
+	.ba-productman-news__textfield{
+		min-height: 40px;
+	}
+	.ba-productman-news__button{
+		min-height: 40px;
+	}
+	.ba-social-networks {
+		margin: 0;
+		padding: 0 0 10px 0;
+	}
+	p{
+		font-size: 14px;
+		text-align: justify;
+	}
+	[class*="ba-social-networks__link"]{
+		height: 50px;
+		width: 50px;
+	}
+}
 
