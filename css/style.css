@@ -13,9 +13,9 @@ a,
 input[type="submit"],
 input[type="button"],
 button{
-	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-webkit-transition: color .2s ease-in, border-color .2s ease-in, background-color .2s ease-in, opacity .2s ease-in;
+	-moz-transition: color .2s ease-in, border-color .2s ease-in, background-color .2s ease-in, opacity .2s ease-in;
+	transition: color .2s ease-in, border-color .2s ease-in, background-color .2s ease-in, opacity .2s ease-in;
 }
 input[type="submit"],
 input[type="button"],
@@ -71,7 +71,7 @@ textarea {
 	padding: 0 0 0 12px;
 }
 .ba-logo:hover{
-	text-shadow: 1px 1px 2px #303030;
+	color: #e10011;
 	transition: all 0.1s ease-in;
 }
 .ba-menu{
@@ -90,7 +90,6 @@ textarea {
 }
 .ba-menu a:hover{
 	color: #e10011;
-	text-decoration: underline;
 }
 
 
@@ -116,10 +115,9 @@ textarea {
 	text-decoration: none;
 	color:  #e10011;
 	font-weight: 700;
-	transition: all 0.1s ease-in;
 }
 .ba-bw__text a:hover{
-	text-decoration: underline;
+	color: black;
 }
 .ba-bw__img{
 	background: radial-gradient( closest-side at 150px 150px  , #fff, transparent);
@@ -251,7 +249,7 @@ textarea {
 }
 .ba-productman-news__button:hover{
 	outline: none;
-	transition: all 0.3s ease-in;
+	transition: all 0.2s ease-in;
 	color: #303030;
 }
 
@@ -268,7 +266,7 @@ textarea {
 	margin-right: 15px;
 }
 .ba-social-networks a:hover{
-	transition: all 0.4s ease-in;
+	transition: all 0.3s linear;
 	transform: rotate(360deg);
 }
 
